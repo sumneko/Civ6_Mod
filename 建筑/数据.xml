@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Buildings>
+		<!--灯塔-->
+		<Update>
+			<Where BuildingType="BUILDING_LIGHTHOUSE"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION</Description>
+			</Set>
+		</Update>
+	</Buildings>
+	<Building_YieldChanges>
+		<!--灯塔-->
+		<Delete BuildingType="BUILDING_LIGHTHOUSE" />
+	</Building_YieldChanges>
+	<ModifierArguments>
+		<!--灯塔 海岸食物+2-->
+		<Delete ModifierId="LIGHTHOUSE_COAST_FOOD" />
+		<Row>
+			<ModifierId>LIGHTHOUSE_COAST_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>LIGHTHOUSE_COAST_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+	</ModifierArguments>
+</GameInfo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Units>
+		<!--开拓者-->
+		<Update>
+			<Where UnitType="UNIT_SETTLER"/>
+			<Set CostProgressionParam1="0"/>
+		</Update>
+		<!--建造者-->
+		<Update>
+			<Where UnitType="UNIT_BUILDER"/>
+			<Set CostProgressionParam1="0"/>
+		</Update>
+		<!--商队-->
+		<Update>
+			<Where UnitType="UNIT_TRADER"/>
+			<Set CostProgressionParam1="0"/>
+		</Update>
+	</Units>
+</GameInfo>

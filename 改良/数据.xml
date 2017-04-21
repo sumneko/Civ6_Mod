@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Improvements>
+		<!--农场-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_FARM"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_FARM_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--矿井-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_MINE"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_MINE_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--采石场-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_QUARRY"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--渔船-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_FISHING_BOATS"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--牧场-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_PASTURE"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_PASTURE_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--种植园-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_PLANTATION"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_PLANTATION_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--营地-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_CAMP"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_CAMP_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--伐木场-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_LUMBER_MILL"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_LUMBER_MILL_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--油井-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_OIL_WELL"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_OIL_WELL_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--海上石油钻机-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_BEACH_RESORT"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_BEACH_RESORT_DESCRIPTION</Description>
+			</Set>
+		</Update>
+	</Improvements>
+	<Improvement_YieldChanges>
+		<!--农场 食物+2-->
+		<Delete ImprovementType="IMPROVEMENT_FARM" />
+		<Row ImprovementType="IMPROVEMENT_FARM" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<!--矿井 生产力+2-->
+		<Delete ImprovementType="IMPROVEMENT_MINE" />
+		<Row ImprovementType="IMPROVEMENT_MINE" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<!--采石场 生产力+1 金币+2-->
+		<Delete ImprovementType="IMPROVEMENT_QUARRY" />
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--渔船 食物+1 生产力+1 注意要保留金币+0,有科技会加成金币-->
+		<Delete ImprovementType="IMPROVEMENT_FISHING_BOATS" />
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_GOLD" YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--牧场 食物+1 生产力+1-->
+		<Delete ImprovementType="IMPROVEMENT_PASTURE" />
+		<Row ImprovementType="IMPROVEMENT_PASTURE" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_PASTURE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--种植园 食物+1 金币+2-->
+		<Delete ImprovementType="IMPROVEMENT_PLANTATION" />
+		<Row ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<!--营地 生产力+1 金币+2-->
+		<Delete ImprovementType="IMPROVEMENT_CAMP" />
+		<Row ImprovementType="IMPROVEMENT_CAMP" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_CAMP" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--伐木场 生产力+2-->
+		<Delete ImprovementType="IMPROVEMENT_LUMBER_MILL" />
+		<Row ImprovementType="IMPROVEMENT_LUMBER_MILL" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<!--油井 生产力+2 金币+4-->
+		<Delete ImprovementType="IMPROVEMENT_OIL_WELL" />
+		<Row ImprovementType="IMPROVEMENT_OIL_WELL" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_OIL_WELL" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<!--海上石油钻机 生产力+2 科技值+2-->
+		<Delete ImprovementType="IMPROVEMENT_OFFSHORE_OIL_RIG" />
+		<Row ImprovementType="IMPROVEMENT_OFFSHORE_OIL_RIG" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_OFFSHORE_OIL_RIG" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+	</Improvement_YieldChanges>
+	<Improvement_ValidTerrains>
+		<!--渔船 允许建造在无资源的海岸上-->
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" TerrainType="TERRAIN_COAST"/>
+	</Improvement_ValidTerrains>
+</GameInfo>

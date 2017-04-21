@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GameData>
 <BaseGameText>
-	<!--灯塔-->
-	<Row Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION">
-	  <Text>+25% combat experience for all naval units trained in this city. +2 [ICON_FOOD] Food on all Coast tiles for this city.</Text>
-	</Row>
-	<!--港口-->
-	<Row Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION">
-	  <Text>A district for naval activity in your city. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. +1 [ICON_Production] Production on all Coast tiles for this city. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Commercial Hub district.</Text>
-	</Row>
-	
 	<!--农场-->
 	<Row Tag="LOC_MOE_IMPROVEMENT_FARM_DESCRIPTION">
 		<Text>Unlocks the Builder ability to construct Farms.[NEWLINE][NEWLINE]+2 [ICON_Food] Food. Can only be built on Grassland or Plains.[NEWLINE][NEWLINE]Constructing farms adjacent to other Farms provides bonuses to Housing.</Text>
@@ -52,15 +43,6 @@
 	</Row>
 </BaseGameText>
 <LocalizedText>
-	<!--灯塔-->
-	<Replace Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
-      <Text>在该城市训练的所有海军单位+25%战斗经验值。该城市的所有海岸单元格+2 [ICON_FOOD] 食物。</Text>
-    </Replace>
-	<!--港口-->
-	<Replace Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION" Language="zh_Hans_CN">
-      <Text>您城市里的海军活动区。同时移除从该单元格的上船、下船 [ICON_Movement] 移动力消耗。该城市的所有海岸单元格+1 [ICON_Production] 生产力。[NEWLINE][NEWLINE]如此城尚未拥有商业中心区域，[ICON_TradeRoute] 贸易路线容量+1。</Text>
-    </Replace>
-    
 	<!--农场-->
     <Replace Tag="LOC_MOE_IMPROVEMENT_FARM_DESCRIPTION" Language="zh_Hans_CN">
       <Text>解锁建造者建造农场的能力。[NEWLINE][NEWLINE]+2 [ICON_Food] 食物。只能建在草原或平原上。[NEWLINE][NEWLINE]农场与农场相邻，能提供住房加成。</Text>

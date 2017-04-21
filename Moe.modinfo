@@ -10,18 +10,31 @@
 		<EnabledAtStartup>0</EnabledAtStartup>
 	</Properties>
 	<Files>
-		<File>Data/Balanced.xml</File>
-		<File>Data/Localized.xml</File>
+		<File>城区/数据.xml</File>
+		<File>单位/数据.xml</File>
+		<File>改良/数据.xml</File>
+		<File>建筑/数据.xml</File>
+		
+		<File>城区/文本.xml</File>
+		<File>单位/文本.xml</File>
+		<File>改良/文本.xml</File>
+		<File>建筑/文本.xml</File>
 	</Files>
 	<Components>
 		<UpdateDatabase id="Moe">
 			<Items>
-				<File>Data/Balanced.xml</File>
+				<File>城区/数据.xml</File>
+				<File>单位/数据.xml</File>
+				<File>改良/数据.xml</File>
+				<File>建筑/数据.xml</File>
 			</Items>
 		</UpdateDatabase>
 		<LocalizedText>
 		    <Items>	
-			    <File>Data/Localized.xml</File>
+				<File>城区/文本.xml</File>
+				<File>单位/文本.xml</File>
+				<File>改良/文本.xml</File>
+				<File>建筑/文本.xml</File>
 			</Items>	
 		</LocalizedText>
 	</Components>
