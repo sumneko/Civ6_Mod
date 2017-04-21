@@ -481,6 +481,7 @@
 		<Update>
 			<Where DistrictType="DISTRICT_HARBOR"/>
 			<Set>
+				<Description>LOC_MOE_DISTRICT_HARBOR_DESCRIPTION</Description>
 				<CostProgressionParam1>0</CostProgressionParam1>
 			</Set>
 		</Update>
@@ -591,17 +592,34 @@
 		<Row DistrictType="DISTRICT_STREET_CARNIVAL" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
 		<Row DistrictType="DISTRICT_STREET_CARNIVAL" GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN" PointsPerTurn="1"/>
 	</District_GreatPersonPoints>
+	<DistrictModifiers>
+		<!--港口-->
+		<Row>
+			<DistrictType>DISTRICT_HARBOR</DistrictType>
+			<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<DistrictType>DISTRICT_ROYAL_NAVY_DOCKYARD</DistrictType>
+			<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
+		</Row>
+	</DistrictModifiers>
 	<Modifiers>
 		<!--ARABIA-->
 		<Row>
 			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_RELIGION_ADD_PLAYER_BELIEF_YIELD</ModifierType>
 		</Row>
-		<!--港口-->
+		<!--港口 提供贸易路线-->
 		<Delete ModifierId="HARBOR_TRADE_ROUTE_CAPACITY" />
 	    <Row>
-	      <ModifierId>HARBOR_TRADE_ROUTE_CAPACITY</ModifierId>
-	      <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+	      	<ModifierId>HARBOR_TRADE_ROUTE_CAPACITY</ModifierId>
+	      	<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+	    </Row>
+		<!--港口 海岸提供的生产力-->
+	    <Row>
+	      	<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>PLOT_HAS_COAST_REQUIREMENTS</SubjectRequirementSetId>
 	    </Row>
 	</Modifiers>
 	<TraitModifiers>
@@ -624,6 +642,17 @@
 			<ModifierId>LIGHTHOUSE_COAST_FOOD</ModifierId>
 			<Name>Amount</Name>
 			<Value>2</Value>
+		</Row>
+		<!--港口 海岸提供的生产力-->
+		<Row>
+			<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
 		</Row>
 		<!--KONGO-->
 		<Delete ModifierId="TRAIT_DOUBLE_WRITER_POINTS" />
