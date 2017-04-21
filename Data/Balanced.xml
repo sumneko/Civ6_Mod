@@ -455,93 +455,129 @@
 		<!--圣地-->
 		<Update>
 			<Where DistrictType="DISTRICT_HOLY_SITE"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--学院-->
 		<Update>
 			<Where DistrictType="DISTRICT_CAMPUS"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--军营-->
 		<Update>
 			<Where DistrictType="DISTRICT_ENCAMPMENT"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--港口-->
 		<Update>
 			<Where DistrictType="DISTRICT_HARBOR"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--航空港-->
 		<Update>
 			<Where DistrictType="DISTRICT_AERODROME"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--商业中心-->
 		<Update>
 			<Where DistrictType="DISTRICT_COMMERCIAL_HUB"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--娱乐中心-->
 		<Update>
 			<Where DistrictType="DISTRICT_ENTERTAINMENT_COMPLEX"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--剧院广场-->
 		<Update>
 			<Where DistrictType="DISTRICT_THEATER"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--工业区-->
 		<Update>
 			<Where DistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--社区-->
 		<Update>
 			<Where DistrictType="DISTRICT_INDUSTRIAL_ZONE"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--水渠-->
 		<Update>
 			<Where DistrictType="DISTRICT_AQUEDUCT"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--卫城-->
 		<Update>
 			<Where DistrictType="DISTRICT_ACROPOLIS"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--浴场-->
 		<Update>
 			<Where DistrictType="DISTRICT_BATH"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--商业同业工会-->
 		<Update>
 			<Where DistrictType="DISTRICT_HANSA"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--修道院-->
 		<Update>
 			<Where DistrictType="DISTRICT_LAVRA"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--姆班赞-->
 		<Update>
 			<Where DistrictType="DISTRICT_MBANZA"/>
-			<Set PrereqCivic="CIVIC_URBANIZATION"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+				<PrereqCivic>CIVIC_URBANIZATION</PrereqCivic>
+			</Set>
 		</Update>
 		<!--街头狂欢节-->
 		<Update>
 			<Where DistrictType="DISTRICT_STREET_CARNIVAL"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 		<!--皇家海军船坞-->
 		<Update>
 			<Where DistrictType="DISTRICT_ROYAL_NAVY_DOCKYARD"/>
-			<Set CostProgressionParam1="0"/>
+			<Set>
+				<CostProgressionParam1>0</CostProgressionParam1>
+			</Set>
 		</Update>
 	</Districts>
 	<District_GreatPersonPoints>
