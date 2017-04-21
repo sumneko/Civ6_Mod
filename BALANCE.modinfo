@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="BALANCE" version="1">
+<Mod id="Moe" version="1">
 	<Properties>
-		<Name>LOC_MOD_Balance</Name>
-		<Teaser>Based_on_CIV6_Balanced_MOD_Powered_By_trcsk</Teaser>
-		<Description>Balanced_MOD</Description>
-		<Authors>trcsk</Authors>
+		<Name>萌</Name>
+		<Teaser>萌</Teaser>
+		<Description>萌</Description>
+		<Authors>最萌小汐</Authors>
 		<ShowInBrowser>AlwaysShow</ShowInBrowser>
 		<EnabledByDefault>1</EnabledByDefault>
 		<EnabledAtStartup>0</EnabledAtStartup>
