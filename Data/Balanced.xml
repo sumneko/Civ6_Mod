@@ -6,9 +6,6 @@
 			<Where BuildingType="BUILDING_LIGHTHOUSE"/>
 			<Set>
 				<Description>LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION</Description>
-				<Cost>60</Cost>
-				<PrereqTech>TECH_SAILING</PrereqTech>
-				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
 			</Set>
 		</Update>
 
