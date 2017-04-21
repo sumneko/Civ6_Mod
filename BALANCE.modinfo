@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="BALANCE" version="1">
+	<Properties>
+		<Name>LOC_MOD_Balance</Name>
+		<Teaser>Based_on_CIV6_Balanced_MOD_Powered_By_trcsk</Teaser>
+		<Description>Balanced_MOD</Description>
+		<Authors>trcsk</Authors>
+		<ShowInBrowser>AlwaysShow</ShowInBrowser>
+		<EnabledByDefault>1</EnabledByDefault>
+		<EnabledAtStartup>0</EnabledAtStartup>
+	</Properties>
+	<Components>
+		<UpdateDatabase id="BALANCE_DATA">
+			<Items>
+				<File>Data/Balanced.xml</File>
+			</Items>
+		</UpdateDatabase>
+	</Components>
+	<Files>
+		<File>Data/Balanced.xml</File>
+	</Files>
+</Mod>

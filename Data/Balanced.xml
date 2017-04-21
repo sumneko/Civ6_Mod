@@ -1,0 +1,1067 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Buildings>
+		<Delete BuildingType="BUILDING_ARENA" />
+		<Row BuildingType="BUILDING_ARENA" Name="LOC_BUILDING_ARENA_NAME" PrereqCivic="CIVIC_GAMES_RECREATION" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="135" AdvisorType="ADVISOR_GENERIC" Maintenance="1" Entertainment="2"/>
+	        <Update>
+			<Where BuildingType="BUILDING_SEWER"/>
+			<Set Housing="4"/>
+		</Update>
+		<Delete BuildingType="BUILDING_ZOO" />
+		<Row BuildingType="BUILDING_ZOO" Name="LOC_BUILDING_ZOO_NAME" Description="LOC_BUILDING_ZOO_DESCRIPTION" PrereqCivic="CIVIC_NATURAL_HISTORY" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="405" AdvisorType="ADVISOR_GENERIC" Maintenance="2" Entertainment="3" RegionalRange="6"/>
+		<Delete BuildingType="BUILDING_STADIUM" />
+		<Row BuildingType="BUILDING_STADIUM" Name="LOC_BUILDING_STADIUM_NAME" Description="LOC_BUILDING_STADIUM_DESCRIPTION" PrereqCivic="CIVIC_PROFESSIONAL_SPORTS" PrereqDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" PurchaseYield="YIELD_GOLD" Cost="600" AdvisorType="ADVISOR_GENERIC" Maintenance="3" Entertainment="4" RegionalRange="6"/>
+		<Delete BuildingType="BUILDING_MADRASA" />
+		<Row BuildingType="BUILDING_MADRASA" Name="LOC_BUILDING_MADRASA_NAME" Description="LOC_BUILDING_MADRASA_DESCRIPTION" PrereqCivic="CIVIC_THEOLOGY" PrereqDistrict="DISTRICT_CAMPUS" PurchaseYield="YIELD_GOLD" Cost="225" AdvisorType="ADVISOR_TECHNOLOGY" Maintenance="2" Housing="2" CitizenSlots="1" TraitType="TRAIT_CIVILIZATION_BUILDING_MADRASA"/>
+		<!--Wonders -->
+		<Delete BuildingType="BUILDING_HANGING_GARDENS" />
+		<Row BuildingType="BUILDING_HANGING_GARDENS" Name="LOC_BUILDING_HANGING_GARDENS_NAME" Description="LOC_BUILDING_HANGING_GARDENS_DESCRIPTION" PrereqTech="TECH_IRRIGATION" Cost="180" Housing="4" AdvisorType="ADVISOR_GENERIC" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" RequiresRiver="true" ObsoleteEra="ERA_MEDIEVAL" Quote="LOC_BUILDING_HANGING_GARDENS_QUOTE" QuoteAudio="Play_HANGINGGARDENS_QUOTE"/>
+		<Delete BuildingType="BUILDING_GREAT_LIGHTHOUSE" />
+		<Row BuildingType="BUILDING_GREAT_LIGHTHOUSE" Name="LOC_BUILDING_GREAT_LIGHTHOUSE_NAME" Description="LOC_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION" PrereqTech="TECH_CELESTIAL_NAVIGATION" Cost="290" Housing="2" AdvisorType="ADVISOR_CONQUEST" AdjacentDistrict="DISTRICT_HARBOR" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" MustNotBeLake="true" MustBeAdjacentLand="true" ObsoleteEra="ERA_RENAISSANCE" Quote="LOC_BUILDING_GREAT_LIGHTHOUSE_QUOTE" QuoteAudio="Play_GREATLIGHTHOUSE_QUOTE"/>
+		<Delete BuildingType="BUILDING_COLOSSEUM" />
+		<Row BuildingType="BUILDING_COLOSSEUM" Name="LOC_BUILDING_COLOSSEUM_NAME" Description="LOC_BUILDING_COLOSSEUM_DESCRIPTION" PrereqCivic="CIVIC_GAMES_RECREATION" Cost="400" AdvisorType="ADVISOR_GENERIC" AdjacentDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" Entertainment="3" RegionalRange="9" ObsoleteEra="ERA_RENAISSANCE" Quote="LOC_BUILDING_COLOSSEUM_QUOTE" QuoteAudio="Play_COLOSSEUM_QUOTE"/>
+		<Delete BuildingType="BUILDING_ESTADIO_DO_MARACANA" />
+		<Row BuildingType="BUILDING_ESTADIO_DO_MARACANA" Name="LOC_BUILDING_ESTADIO_DO_MARACANA_NAME" Description="LOC_BUILDING_ESTADIO_DO_MARACANA_DESCRIPTION" PrereqCivic="CIVIC_PROFESSIONAL_SPORTS" Cost="1740" AdvisorType="ADVISOR_GENERIC" AdjacentDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" Entertainment="4" RegionalRange="100000" Quote="LOC_BUILDING_ESTADIO_DO_MARACANA_QUOTE" QuoteAudio="Play_ESTADIODOMARACANA_QUOTE"/>
+	</Buildings>
+	<Building_YieldChanges>
+		<Delete BuildingType="BUILDING_WORKSHOP" />
+		<Row BuildingType="BUILDING_WORKSHOP" YieldType="YIELD_PRODUCTION" YieldChange="4"/>
+		<Delete BuildingType="BUILDING_POWER_PLANT" />
+		<Row BuildingType="BUILDING_POWER_PLANT" YieldType="YIELD_PRODUCTION" YieldChange="10"/>
+		<Delete BuildingType="BUILDING_FACTORY" />
+		<Row BuildingType="BUILDING_FACTORY" YieldType="YIELD_PRODUCTION" YieldChange="8"/>
+		<Delete BuildingType="BUILDING_ELECTRONICS_FACTORY" />
+		<Row BuildingType="BUILDING_ELECTRONICS_FACTORY" YieldType="YIELD_PRODUCTION" YieldChange="10"/>
+		<Delete BuildingType="BUILDING_STAVE_CHURCH" />
+		<Row BuildingType="BUILDING_STAVE_CHURCH" YieldType="YIELD_FAITH" YieldChange="6"/>
+		<!--Wonders -->
+		<Delete BuildingType="BUILDING_STONEHENGE" />
+		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<Row BuildingType="BUILDING_HANGING_GARDENS" YieldType="YIELD_FOOD" YieldChange="4"/>
+		<Delete BuildingType="BUILDING_GREAT_LIGHTHOUSE" />
+		<Row BuildingType="BUILDING_GREAT_LIGHTHOUSE" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Delete BuildingType="BUILDING_ORACLE" />
+		<Row BuildingType="BUILDING_ORACLE" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_ORACLE" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Delete BuildingType="BUILDING_COLOSSUS" />
+		<Row BuildingType="BUILDING_COLOSSUS" YieldType="YIELD_GOLD" YieldChange="6"/>
+		<Row BuildingType="BUILDING_TERRACOTTA_ARMY" YieldType="YIELD_CULTURE" YieldChange="4"/>
+		<Delete BuildingType="BUILDING_GREAT_LIBRARY" />
+		<Row BuildingType="BUILDING_GREAT_LIBRARY" YieldType="YIELD_SCIENCE" YieldChange="4"/>
+		<Delete BuildingType="BUILDING_MAHABODHI_TEMPLE" />
+		<Row BuildingType="BUILDING_MAHABODHI_TEMPLE" YieldType="YIELD_FAITH" YieldChange="8"/>
+		<Delete BuildingType="BUILDING_HAGIA_SOPHIA" />
+		<Row BuildingType="BUILDING_HAGIA_SOPHIA" YieldType="YIELD_FAITH" YieldChange="8"/>
+		<Delete BuildingType="BUILDING_MONT_ST_MICHEL" />
+		<Row BuildingType="BUILDING_MONT_ST_MICHEL" YieldType="YIELD_FAITH" YieldChange="8"/>
+		<Delete BuildingType="BUILDING_GREAT_ZIMBABWE" />
+		<Row BuildingType="BUILDING_GREAT_ZIMBABWE" YieldType="YIELD_GOLD" YieldChange="8"/>
+		<Delete BuildingType="BUILDING_POTALA_PALACE" />
+		<Row BuildingType="BUILDING_POTALA_PALACE" YieldType="YIELD_CULTURE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_POTALA_PALACE" YieldType="YIELD_FAITH" YieldChange="6"/>
+		<Row BuildingType="BUILDING_RUHR_VALLEY" YieldType="YIELD_PRODUCTION" YieldChange="6"/>
+		<Row BuildingType="BUILDING_OXFORD_UNIVERSITY" YieldType="YIELD_SCIENCE" YieldChange="4"/>
+		<Row BuildingType="BUILDING_BOLSHOI_THEATRE" YieldType="YIELD_CULTURE" YieldChange="6"/>
+		<Delete BuildingType="BUILDING_BIG_BEN" />
+		<Row BuildingType="BUILDING_BIG_BEN" YieldType="YIELD_GOLD" YieldChange="8"/>
+		<Row BuildingType="BUILDING_HERMITAGE" YieldType="YIELD_CULTURE" YieldChange="6"/>
+		<Row BuildingType="BUILDING_BROADWAY" YieldType="YIELD_CULTURE" YieldChange="4"/>
+		<Row BuildingType="BUILDING_EIFFEL_TOWER" YieldType="YIELD_CULTURE" YieldChange="4"/>
+	</Building_YieldChanges>
+	<Building_GreatPersonPoints>
+		<!-- Wonders -->
+		<Delete BuildingType="BUILDING_HERMITAGE" />
+		<Row BuildingType="BUILDING_HERMITAGE" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="6"/>
+		<Delete BuildingType="BUILDING_SYDNEY_OPERA_HOUSE" />
+		<Row BuildingType="BUILDING_SYDNEY_OPERA_HOUSE" GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN" PointsPerTurn="8"/>
+	</Building_GreatPersonPoints>
+	<Building_GreatWorks>
+		<!-- Wonders -->
+		<Delete BuildingType="BUILDING_BOLSHOI_THEATRE" />
+		<Row BuildingType="BUILDING_BOLSHOI_THEATRE" GreatWorkSlotType="GREATWORKSLOT_WRITING" NumSlots="2"/>
+		<Row BuildingType="BUILDING_BOLSHOI_THEATRE" GreatWorkSlotType="GREATWORKSLOT_MUSIC" NumSlots="1"/>
+		<Delete BuildingType="BUILDING_HERMITAGE" />
+		<Row BuildingType="BUILDING_HERMITAGE" GreatWorkSlotType="GREATWORKSLOT_ART" NumSlots="6"/>
+		<Delete BuildingType="BUILDING_BROADWAY" />
+		<Row BuildingType="BUILDING_BROADWAY" GreatWorkSlotType="GREATWORKSLOT_WRITING" NumSlots="2"/>
+		<Row BuildingType="BUILDING_BROADWAY" GreatWorkSlotType="GREATWORKSLOT_MUSIC" NumSlots="2"/>
+		<Delete BuildingType="BUILDING_SYDNEY_OPERA_HOUSE" />
+		<Row BuildingType="BUILDING_SYDNEY_OPERA_HOUSE" GreatWorkSlotType="GREATWORKSLOT_MUSIC" NumSlots="5"/>
+	</Building_GreatWorks>
+	<Feature_YieldChanges>
+		<Delete FeatureType="FEATURE_OASIS" />
+		<Row FeatureType="FEATURE_OASIS" YieldType="YIELD_FOOD" YieldChange="4"/>
+		<Row FeatureType="FEATURE_OASIS" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<!--Natural Wonders do not add to the base terrain yield -->
+		<Delete FeatureType="FEATURE_BARRIER_REEF" />
+		<Row FeatureType="FEATURE_BARRIER_REEF" YieldType="YIELD_FOOD" YieldChange="4"/>
+		<Row FeatureType="FEATURE_BARRIER_REEF" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+		<Delete FeatureType="FEATURE_CLIFFS_DOVER" />
+		<Row FeatureType="FEATURE_CLIFFS_DOVER" YieldType="YIELD_CULTURE" YieldChange="4"/>
+		<Row FeatureType="FEATURE_CLIFFS_DOVER" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Delete FeatureType="FEATURE_CRATER_LAKE" />
+		<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_FAITH" YieldChange="6"/>
+		<Row FeatureType="FEATURE_CRATER_LAKE" YieldType="YIELD_SCIENCE" YieldChange="5"/>
+		<Delete FeatureType="FEATURE_DEAD_SEA" />
+		<Row FeatureType="FEATURE_DEAD_SEA" YieldType="YIELD_CULTURE" YieldChange="4"/>
+		<Row FeatureType="FEATURE_DEAD_SEA" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<Delete FeatureType="FEATURE_PANTANAL" />
+		<Row FeatureType="FEATURE_PANTANAL" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row FeatureType="FEATURE_PANTANAL" YieldType="YIELD_FOOD" YieldChange="4"/>
+	</Feature_YieldChanges>
+	<Feature_AdjacentYields>
+		<Delete FeatureType="FEATURE_EVEREST" />
+		<Row FeatureType="FEATURE_EVEREST" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<Delete FeatureType="FEATURE_GALAPAGOS" />
+		<Row FeatureType="FEATURE_GALAPAGOS" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+		<Delete FeatureType="FEATURE_KILIMANJARO" />
+		<Row FeatureType="FEATURE_KILIMANJARO" YieldType="YIELD_FOOD" YieldChange="3"/>
+		<Delete FeatureType="FEATURE_TSINGY" />
+		<Row FeatureType="FEATURE_TSINGY" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row FeatureType="FEATURE_TSINGY" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Delete FeatureType="FEATURE_PIOPIOTAHI" />
+		<Row FeatureType="FEATURE_PIOPIOTAHI" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Row FeatureType="FEATURE_PIOPIOTAHI" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete FeatureType="FEATURE_YOSEMITE" />
+		<Row FeatureType="FEATURE_YOSEMITE" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row FeatureType="FEATURE_YOSEMITE" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+	</Feature_AdjacentYields>
+	<Improvement_YieldChanges>
+		<Delete ImprovementType="IMPROVEMENT_QUARRY" />
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_FISHING_BOATS" />
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_PLANTATION" />
+		<Row ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_PLANTATION" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_CAMP" />
+		<Row ImprovementType="IMPROVEMENT_CAMP" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_CAMP" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--Unique Improvements -->
+		<Delete ImprovementType="IMPROVEMENT_CHATEAU" />
+		<Row ImprovementType="IMPROVEMENT_CHATEAU" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_CHATEAU" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ImprovementType="IMPROVEMENT_GREAT_WALL" />
+		<Row ImprovementType="IMPROVEMENT_GREAT_WALL" YieldType="YIELD_GOLD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_GREAT_WALL" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_KURGAN" />
+		<Row ImprovementType="IMPROVEMENT_KURGAN" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_KURGAN" YieldType="YIELD_FAITH" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_MISSION" />
+		<Row ImprovementType="IMPROVEMENT_MISSION" YieldType="YIELD_FAITH" YieldChange="4"/>
+		<Row ImprovementType="IMPROVEMENT_MISSION" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Delete ImprovementType="IMPROVEMENT_SPHINX" />
+		<Row ImprovementType="IMPROVEMENT_SPHINX" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_SPHINX" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Delete ImprovementType="IMPROVEMENT_STEPWELL" />
+		<Row ImprovementType="IMPROVEMENT_STEPWELL" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_STEPWELL" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Delete ImprovementType="IMPROVEMENT_ZIGGURAT" />
+		<Row ImprovementType="IMPROVEMENT_ZIGGURAT" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ImprovementType="IMPROVEMENT_ZIGGURAT" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+	</Improvement_YieldChanges>
+	<Resource_ValidTerrains>
+		<Delete ResourceType="RESOURCE_COPPER" />
+		<Row ResourceType="RESOURCE_COPPER" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_COPPER" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_COPPER" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_SHEEP" />
+		<Row ResourceType="RESOURCE_SHEEP" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_SHEEP" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_SHEEP" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_STONE" />
+		<Row ResourceType="RESOURCE_STONE" TerrainType="TERRAIN_GRASS"/>
+		<!--Luxury -->
+		<Delete ResourceType="RESOURCE_COFFEE" />
+		<Delete ResourceType="RESOURCE_DIAMONDS" />
+		<Row ResourceType="RESOURCE_DIAMONDS" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_DIAMONDS" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_DIAMONDS" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_FURS" />
+		<Row ResourceType="RESOURCE_FURS" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_FURS" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_GYPSUM" />
+		<Row ResourceType="RESOURCE_GYPSUM" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_GYPSUM" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_GYPSUM" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_INCENSE" />
+		<Row ResourceType="RESOURCE_INCENSE" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_INCENSE" TerrainType="TERRAIN_PLAINS"/>
+		<Delete ResourceType="RESOURCE_IVORY" />
+		<Delete ResourceType="RESOURCE_MARBLE" />
+		<Row ResourceType="RESOURCE_MARBLE" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_MARBLE" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Delete ResourceType="RESOURCE_MERCURY" />
+		<Row ResourceType="RESOURCE_MERCURY" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_MERCURY" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Delete ResourceType="RESOURCE_SALT" />
+		<Row ResourceType="RESOURCE_SALT" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_SALT" TerrainType="TERRAIN_TUNDRA"/>
+		<Delete ResourceType="RESOURCE_SILVER" />
+		<Row ResourceType="RESOURCE_SILVER" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_SILVER" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_SILVER" TerrainType="TERRAIN_TUNDRA"/>
+		<Row ResourceType="RESOURCE_SILVER" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_TEA" />
+		<Row ResourceType="RESOURCE_TEA" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_TEA" TerrainType="TERRAIN_PLAINS"/>
+		<Delete ResourceType="RESOURCE_TOBACCO" />
+		<!--Strategic -->
+		<Delete ResourceType="RESOURCE_ALUMINUM" />
+		<Row ResourceType="RESOURCE_ALUMINUM" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_ALUMINUM" TerrainType="TERRAIN_DESERT_HILLS"/>
+		<Row ResourceType="RESOURCE_ALUMINUM" TerrainType="TERRAIN_DESERT"/>
+		<Delete ResourceType="RESOURCE_IRON" />
+		<Row ResourceType="RESOURCE_IRON" TerrainType="TERRAIN_GRASS_HILLS"/>
+		<Row ResourceType="RESOURCE_IRON" TerrainType="TERRAIN_PLAINS_HILLS"/>
+		<Row ResourceType="RESOURCE_IRON" TerrainType="TERRAIN_TUNDRA_HILLS"/>
+		<Delete ResourceType="RESOURCE_NITER" />
+		<Row ResourceType="RESOURCE_NITER" TerrainType="TERRAIN_GRASS"/>
+		<Row ResourceType="RESOURCE_NITER" TerrainType="TERRAIN_PLAINS"/>
+		<Row ResourceType="RESOURCE_NITER" TerrainType="TERRAIN_TUNDRA"/>
+	</Resource_ValidTerrains>
+	<Resource_ValidFeatures>
+		<!--Luxury -->
+		<Delete ResourceType="RESOURCE_COCOA" />
+		<Row ResourceType="RESOURCE_COCOA" FeatureType="FEATURE_JUNGLE"/>
+		<Row ResourceType="RESOURCE_COCOA" FeatureType="FEATURE_FOREST"/>
+		<Delete ResourceType="RESOURCE_COFFEE" />
+		<Row ResourceType="RESOURCE_COFFEE" FeatureType="FEATURE_JUNGLE"/>
+		<Row ResourceType="RESOURCE_COFFEE" FeatureType="FEATURE_FOREST"/>
+		<Delete ResourceType="RESOURCE_COTTON" />
+		<Delete ResourceType="RESOURCE_DIAMONDS" />
+		<Delete ResourceType="RESOURCE_SPICES" />
+		<Row ResourceType="RESOURCE_SPICES" FeatureType="FEATURE_JUNGLE"/>
+		<Delete ResourceType="RESOURCE_WINE" />
+		<!--Strategic -->
+		<Delete ResourceType="RESOURCE_NITER" />
+	</Resource_ValidFeatures>
+	<Resource_YieldChanges>
+		<!--Bonus-->
+		<Delete ResourceType="RESOURCE_CATTLE" />
+		<Row ResourceType="RESOURCE_CATTLE" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_CATTLE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_COPPER" />
+		<Row ResourceType="RESOURCE_COPPER" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_COPPER" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_CRABS" />
+		<Row ResourceType="RESOURCE_CRABS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_CRABS" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_DEER" />
+		<Row ResourceType="RESOURCE_DEER" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_FISH" />
+		<Row ResourceType="RESOURCE_FISH" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_RICE" />
+		<Row ResourceType="RESOURCE_RICE" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_STONE" />
+		<Row ResourceType="RESOURCE_STONE" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_WHEAT" />
+		<Row ResourceType="RESOURCE_WHEAT" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<!--Luxury-->
+		<Delete ResourceType="RESOURCE_CITRUS" />
+		<Row ResourceType="RESOURCE_CITRUS" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_CITRUS" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_COCOA" />
+		<Row ResourceType="RESOURCE_COCOA" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_COCOA" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_COFFEE" />
+		<Row ResourceType="RESOURCE_COFFEE" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row ResourceType="RESOURCE_COFFEE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_COTTON" />
+		<Row ResourceType="RESOURCE_COTTON" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_COTTON" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Delete ResourceType="RESOURCE_DIAMONDS" />
+		<Row ResourceType="RESOURCE_DIAMONDS" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_DIAMONDS" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Delete ResourceType="RESOURCE_DYES" />
+		<Row ResourceType="RESOURCE_DYES" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row ResourceType="RESOURCE_DYES" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_FURS" />
+		<Row ResourceType="RESOURCE_FURS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_FURS" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_GYPSUM" />
+		<Row ResourceType="RESOURCE_GYPSUM" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_GYPSUM" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_INCENSE" />
+		<Row ResourceType="RESOURCE_INCENSE" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_INCENSE" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_IVORY" />
+		<Row ResourceType="RESOURCE_IVORY" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row ResourceType="RESOURCE_IVORY" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_JADE" />
+		<Row ResourceType="RESOURCE_JADE" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_JADE" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_MARBLE" />
+		<Row ResourceType="RESOURCE_MARBLE" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_MARBLE" YieldType="YIELD_CULTURE" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_MERCURY" />
+		<Row ResourceType="RESOURCE_MERCURY" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_MERCURY" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_PEARLS" />
+		<Row ResourceType="RESOURCE_PEARLS" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Row ResourceType="RESOURCE_PEARLS" YieldType="YIELD_FAITH" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_SALT" />
+		<Row ResourceType="RESOURCE_SALT" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SALT" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Delete ResourceType="RESOURCE_SILK" />
+		<Row ResourceType="RESOURCE_SILK" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SILK" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_SILVER" />
+		<Row ResourceType="RESOURCE_SILVER" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_SILVER" YieldType="YIELD_GOLD" YieldChange="4"/>
+		<Delete ResourceType="RESOURCE_SPICES" />
+		<Row ResourceType="RESOURCE_SPICES" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SPICES" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_SUGAR" />
+		<Row ResourceType="RESOURCE_SUGAR" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_SUGAR" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_TEA" />
+		<Row ResourceType="RESOURCE_TEA" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_TEA" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_TOBACCO" />
+		<Row ResourceType="RESOURCE_TOBACCO" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_TOBACCO" YieldType="YIELD_FAITH" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_TRUFFLES" />
+		<Row ResourceType="RESOURCE_TRUFFLES" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_TRUFFLES" YieldType="YIELD_GOLD" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_WHALES" />
+		<Row ResourceType="RESOURCE_WHALES" YieldType="YIELD_FOOD" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_WHALES" YieldType="YIELD_GOLD" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_WINE" />
+		<Row ResourceType="RESOURCE_WINE" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_WINE" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<!--Strategic-->
+		<Delete ResourceType="RESOURCE_ALUMINUM" />
+		<Row ResourceType="RESOURCE_ALUMINUM" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_ALUMINUM" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_COAL" />
+		<Row ResourceType="RESOURCE_COAL" YieldType="YIELD_PRODUCTION" YieldChange="3"/>
+		<Delete ResourceType="RESOURCE_HORSES" />
+		<Row ResourceType="RESOURCE_HORSES" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_HORSES" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_IRON" />
+		<Row ResourceType="RESOURCE_IRON" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_IRON" YieldType="YIELD_SCIENCE" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_NITER" />
+		<Row ResourceType="RESOURCE_NITER" YieldType="YIELD_SCIENCE" YieldChange="1"/>
+		<Row ResourceType="RESOURCE_NITER" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Delete ResourceType="RESOURCE_OIL" />
+		<Row ResourceType="RESOURCE_OIL" YieldType="YIELD_PRODUCTION" YieldChange="4"/>
+		<Delete ResourceType="RESOURCE_URANIUM" />
+		<Row ResourceType="RESOURCE_URANIUM" YieldType="YIELD_PRODUCTION" YieldChange="2"/>
+		<Row ResourceType="RESOURCE_URANIUM" YieldType="YIELD_SCIENCE" YieldChange="4"/>
+	</Resource_YieldChanges>
+	<Units>
+		<Update>
+			<Where UnitType="UNIT_BIPLANE"/>
+			<Set Combat="70" RangedCombat="65"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_FIGHTER"/>
+			<Set RangedCombat="80"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_AMERICAN_P51"/>
+			<Set RangedCombat="80"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_BOMBER"/>
+			<Set Combat="75"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JET_FIGHTER"/>
+			<Set BaseMoves="6" RangedCombat="90"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JET_BOMBER"/>
+			<Set Combat="85" Bombard="90"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_MACHINE_GUN"/>
+			<Set Combat="70" RangedCombat="80" Range="2" Cost="600"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_PIKEMAN"/>
+			<Set Combat="45"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_SPEARMAN"/>
+			<Set Combat="28"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_GREEK_HOPLITE"/>
+			<Set Combat="28"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_CHINESE_CROUCHING_TIGER"/>
+			<Set Range="2" Cost="180"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_EGYPTIAN_CHARIOT_ARCHER"/>
+			<Set Combat="20" RangedCombat="30" Cost="80"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_INDIAN_VARU"/>
+			<Set BaseMoves="3" Cost="100" Maintenance="2" Combat="38"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_JAPANESE_SAMURAI"/>
+			<Set Combat="50"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_NORWEGIAN_BERSERKER"/>
+			<Set Combat="48"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ARABIAN_MAMLUK"/>
+			<Set Combat="50"/>
+		</Update>
+		<Update>
+			<Where UnitType="UNIT_ROMAN_LEGION"/>
+			<Set Cost="90"/>
+		</Update>
+		<Update>
+			<Where UnitType="KONGO_SHIELD_BEARER"/>
+			<Set Cost="90"/>
+		</Update>
+	</Units>
+	<Districts>
+		<Delete DistrictType="DISTRICT_MBANZA" />
+		<Row DistrictType="DISTRICT_MBANZA" Name="LOC_DISTRICT_MBANZA_NAME" Description="LOC_DISTRICT_MBANZA_DESCRIPTION" PrereqCivic="CIVIC_URBANIZATION" PlunderType="PLUNDER_GOLD" PlunderAmount="50" AdvisorType="ADVISOR_GENERIC" Cost="30" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000" RequiresPlacement="true" RequiresPopulation="false" OnePerCity="false" Aqueduct="false" NoAdjacentCity="false" InternalOnly="false" ZOC="true" CaptureRemovesBuildings="false" CaptureRemovesCityDefenses="false" MilitaryDomain="NO_DOMAIN" Housing="5" CityStrengthModifier="2" TraitType="TRAIT_CIVILIZATION_MBANZA"/>
+		<Delete DistrictType="DISTRICT_BATH" />
+		<Row DistrictType="DISTRICT_BATH" Name="LOC_DISTRICT_BATH_NAME" Description="LOC_DISTRICT_BATH_DESCRIPTION" PrereqTech="TECH_ENGINEERING" PlunderType="PLUNDER_GOLD" PlunderAmount="50" AdvisorType="ADVISOR_GENERIC" Cost="25" CostProgressionModel="COST_PROGRESSION_GAME_PROGRESS" CostProgressionParam1="1000" RequiresPlacement="true" RequiresPopulation="false" Aqueduct="true" NoAdjacentCity="false" InternalOnly="false" ZOC="false" CaptureRemovesBuildings="false" CaptureRemovesCityDefenses="false" MilitaryDomain="NO_DOMAIN" Housing="4" Entertainment="2" TraitType="TRAIT_CIVILIZATION_DISTRICT_BATH"/>
+	</Districts>
+	<District_GreatPersonPoints>
+		<Delete DistrictType="DISTRICT_LAVRA" />
+		<Row DistrictType="DISTRICT_LAVRA" GreatPersonClassType="GREAT_PERSON_CLASS_PROPHET" PointsPerTurn="2"/>
+		<Row DistrictType="DISTRICT_STREET_CARNIVAL" GreatPersonClassType="GREAT_PERSON_CLASS_WRITER" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_STREET_CARNIVAL" GreatPersonClassType="GREAT_PERSON_CLASS_ARTIST" PointsPerTurn="1"/>
+		<Row DistrictType="DISTRICT_STREET_CARNIVAL" GreatPersonClassType="GREAT_PERSON_CLASS_MUSICIAN" PointsPerTurn="1"/>
+	</District_GreatPersonPoints>
+	<Modifiers>
+		<!--ARABIA-->
+		<Row>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_RELIGION_ADD_PLAYER_BELIEF_YIELD</ModifierType>
+		</Row>
+	</Modifiers>
+	<TraitModifiers>
+		<!--ARABIA-->
+		<Row>
+			<TraitType>TRAIT_CIVILIZATION_LAST_PROPHET</TraitType>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<ModifierArguments>
+		<!--KONGO-->
+		<Delete ModifierId="TRAIT_DOUBLE_WRITER_POINTS" />
+		<Delete ModifierId="TRAIT_DOUBLE_ARTIST_POINTS" />
+		<Delete ModifierId="TRAIT_DOUBLE_MUSICIAN_POINTS" />
+		<Delete ModifierId="TRAIT_DOUBLE_MERCHANT_POINTS" />
+		<!--ARABIA-->
+		<Delete ModifierId="TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION" />
+		<Row>
+			<ModifierId>TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>BeliefYieldType</Name>
+			<Value>BELIEF_YIELD_PER_FOREIGN_CITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>PerXItems</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>BeliefYieldType</Name>
+			<Value>BELIEF_YIELD_PER_FOREIGN_CITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
+			<Name>PerXItems</Name>
+			<Value>1</Value>
+		</Row>
+		<!--BRAZIL-->
+		<Delete ModifierId="TRAIT_GREAT_PERSON_REFUND" />
+		<Row>
+			<ModifierId>TRAIT_GREAT_PERSON_REFUND</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<!--EGYPT-->
+		<Delete ModifierId="TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD" />
+		<Row>
+			<ModifierId>TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD</ModifierId>
+			<Name>Intercontinental</Name>
+			<Value>false</Value>
+		</Row>
+		<Delete ModifierId="TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT" />
+		<Delete ModifierId="TRAIT_RIVER_FASTER_BUILDTIME_WONDER" />
+		<Row>
+			<ModifierId>TRAIT_RIVER_FASTER_BUILDTIME_DISTRICT</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_RIVER_FASTER_BUILDTIME_WONDER</ModifierId>
+			<Name>Amount</Name>
+			<Value>25</Value>
+		</Row>
+		<!--ENGLAND-->
+		<Delete ModifierId="ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT" />
+		<Row>
+			<ModifierId>ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<!--FRANCE-->
+		<Delete ModifierId="TRAIT_ALHAMBRAPRODUCTION" />
+		<Delete ModifierId="TRAIT_CHICHENITZAPRODUCTION" />
+		<Delete ModifierId="TRAIT_FORBIDDENCITYPRODUCTION" />
+		<Delete ModifierId="TRAIT_GREATZIMBABWEPRODUCTION" />
+		<Delete ModifierId="TRAIT_HAGIASOPHIAPRODUCTION" />
+		<Delete ModifierId="TRAIT_VENETIANARSENALPRODUCTION" />
+		<Delete ModifierId="TRAIT_MONTSTMICHELPRODUCTION" />
+		<Delete ModifierId="TRAIT_POTALAPALACEPRODUCTION" />
+		<Delete ModifierId="TRAIT_BOLSHOITHEATREPRODUCTION" />
+		<Delete ModifierId="TRAIT_HERMITAGEPRODUCTION" />
+		<Delete ModifierId="TRAIT_RUHRVALLEYPRODUCTION" />
+		<Delete ModifierId="TRAIT_OXFORDUNIVERSITYPRODUCTION" />
+		<Delete ModifierId="TRAIT_BIGBENPRODUCTION" />
+		<Row>
+			<ModifierId>TRAIT_ALHAMBRAPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_ALHAMBRA</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALHAMBRAPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CHICHENITZAPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_CHICHEN_ITZA</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CHICHENITZAPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_FORBIDDENCITYPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_FORBIDDEN_CITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_FORBIDDENCITYPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_GREATZIMBABWEPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_GREAT_ZIMBABWE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_GREATZIMBABWEPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_HAGIASOPHIAPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_HAGIA_SOPHIA</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_HAGIASOPHIAPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_VENETIANARSENALPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_VENETIAN_ARSENAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_VENETIANARSENALPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_MONTSTMICHELPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MONT_ST_MICHEL</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_MONTSTMICHELPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_POTALAPALACEPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_POTALA_PALACE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_POTALAPALACEPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_BOLSHOITHEATREPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_BOLSHOI_THEATRE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_BOLSHOITHEATREPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_HERMITAGEPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_HERMITAGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_HERMITAGEPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_RUHRVALLEYPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_RUHR_VALLEY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_RUHRVALLEYPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_OXFORDUNIVERSITYPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_OXFORD_UNIVERSITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_OXFORDUNIVERSITYPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_BIGBENPRODUCTION</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_BIG_BEN</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_BIGBENPRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+		<!--INDIA-->
+		<Delete ModifierId="TRAIT_FAITH_PEACEFUL_FOUNDERS" />
+		<Row>
+			<ModifierId>TRAIT_FAITH_PEACEFUL_FOUNDERS</ModifierId>
+			<Name>Amount</Name>
+			<Value>15</Value>
+		</Row>
+		<!--SPAIN-->
+		<Delete ModifierId="TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD" />
+		<Delete ModifierId="TRAIT_INTERCONTINENTAL_DOMESTIC_FOOD" />
+		<Delete ModifierId="TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION" />
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_INTERNATIONAL_GOLD</ModifierId>
+			<Name>Intercontinental</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_FOOD</ModifierId>
+			<Name>Intercontinental</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_INTERCONTINENTAL_DOMESTIC_PRODUCTION</ModifierId>
+			<Name>Intercontinental</Name>
+			<Value>true</Value>
+		</Row>
+		<!--CHINA-->
+		<Delete ModifierId="TRAIT_ADJUST_BUILDER_CHARGES" />
+		<Row>
+			<ModifierId>TRAIT_ADJUST_BUILDER_CHARGES</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+	        <!--POLICIES-->
+		<Row>
+			<ModifierId>AGOGE_ANCIENT_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_ANCIENT_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_ANCIENT</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_ANCIENT_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_CLASSICAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_CLASSICAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_CLASSICAL</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_CLASSICAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_MEDIEVAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_MEDIEVAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_MEDIEVAL</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_MEDIEVAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_RENAISSANCE_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_RENAISSANCE_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_RENAISSANCE</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_RENAISSANCE_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_INDUSTRIAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_INDUSTRIAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_INDUSTRIAL</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_INDUSTRIAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_MODERN_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_MODERN_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_MODERN</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_MODERN_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_ATOMIC_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_ATOMIC_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_ATOMIC</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_ATOMIC_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_INFORMATION_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_ANTI_CAVALRY</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_INFORMATION_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>EraType</Name>
+			<Value>ERA_INFORMATION</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_INFORMATION_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+			<Extra>-1</Extra>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEAMPHITHEATER</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_AMPHITHEATER</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEAMPHITHEATER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEAMPHITHEATER</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMART</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MUSEUM_ART</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMART</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMART</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMARTIFACT</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MUSEUM_ARTIFACT</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMARTIFACT</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMARTIFACT</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEBROADCASTCENTER</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_BROADCAST_CENTER</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEBROADCASTCENTER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEBROADCASTCENTER</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+	</ModifierArguments>
+	<!--POLICIES-->
+	<Modifiers>
+		<Row>
+			<ModifierId>AGOGE_ANCIENT_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>AGOGE_CLASSICAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_MEDIEVAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>FEUDALCONTRACT_RENAISSANCE_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_INDUSTRIAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>GRANDEARMEE_MODERN_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_ATOMIC_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MILITARYFIRST_INFORMATION_ANTI_CAVALRY_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_TAG_ERA_PRODUCTION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEAMPHITHEATER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMART</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMARTIFACT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>SPORTSMEDIA_DOUBLEBROADCASTCENTER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_MODIFIER</ModifierType>
+		</Row>
+	</Modifiers>
+	<PolicyModifiers>
+		<Row>
+			<PolicyType>POLICY_AGOGE</PolicyType>
+			<ModifierId>AGOGE_ANCIENT_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_AGOGE</PolicyType>
+			<ModifierId>AGOGE_CLASSICAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FEUDAL_CONTRACT</PolicyType>
+			<ModifierId>FEUDALCONTRACT_MEDIEVAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_FEUDAL_CONTRACT</PolicyType>
+			<ModifierId>FEUDALCONTRACT_RENAISSANCE_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_GRANDE_ARMEE</PolicyType>
+			<ModifierId>GRANDEARMEE_INDUSTRIAL_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_GRANDE_ARMEE</PolicyType>
+			<ModifierId>GRANDEARMEE_MODERN_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_FIRST</PolicyType>
+			<ModifierId>MILITARYFIRST_ATOMIC_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_MILITARY_FIRST</PolicyType>
+			<ModifierId>MILITARYFIRST_INFORMATION_ANTI_CAVALRY_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPORTS_MEDIA</PolicyType>
+			<ModifierId>SPORTSMEDIA_DOUBLEAMPHITHEATER</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPORTS_MEDIA</PolicyType>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMART</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPORTS_MEDIA</PolicyType>
+			<ModifierId>SPORTSMEDIA_DOUBLEMUSEUMARTIFACT</ModifierId>
+		</Row>
+		<Row>
+			<PolicyType>POLICY_SPORTS_MEDIA</PolicyType>
+			<ModifierId>SPORTSMEDIA_DOUBLEBROADCASTCENTER</ModifierId>
+		</Row>
+	</PolicyModifiers>
+</GameInfo>
