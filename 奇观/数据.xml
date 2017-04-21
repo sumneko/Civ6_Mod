@@ -22,6 +22,20 @@
 				<Description>LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION</Description>
 			</Set>
 		</Update>
+		<!--神谕-->
+		<Update>
+			<Where BuildingType="BUILDING_ORACLE"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_ORACLE_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--巨像-->
+		<Update>
+			<Where BuildingType="BUILDING_COLOSSUS"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION</Description>
+			</Set>
+		</Update>
 	</Buildings>
 	<Building_YieldChanges>
 		<!--巨石阵 信仰+3 文化+3 科技+3-->
@@ -32,6 +46,10 @@
 		<!--金字塔 文化+5-->
 		<Delete BuildingType="BUILDING_PYRAMIDS"/>
 		<Row BuildingType="BUILDING_PYRAMIDS" YieldType="YIELD_CULTURE" YieldChange="5"/>
+		<!--神谕 文化+2 信仰+2-->
+		<Delete BuildingType="BUILDING_ORACLE"/>
+		<Row BuildingType="BUILDING_ORACLE" YieldType="YIELD_CULTURE" YieldChange="2"/>
+		<Row BuildingType="BUILDING_ORACLE" YieldType="YIELD_FAITH" YieldChange="2"/>
 		<!--大灯塔 金币+0-->
 		<Delete BuildingType="BUILDING_GREAT_LIGHTHOUSE"/>
 	</Building_YieldChanges>
@@ -65,6 +83,95 @@
 			<Name>Amount</Name>
 			<Value>2</Value>
 		</Row>
+		<!--神谕 伟人点数+4-->
+		<Delete ModifierId="ORACLE_GREATGENERALPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATGENERALPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_GENERAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATGENERALPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATADMIRALPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATADMIRALPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ADMIRAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATADMIRALPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATENGINEERPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATENGINEERPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATENGINEERPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATMERCHANTPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATMERCHANTPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_MERCHANT</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATMERCHANTPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATPROPHETPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATPROPHETPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_PROPHET</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATPROPHETPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATSCIENTISTPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATSCIENTISTPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_SCIENTIST</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATSCIENTISTPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_GREATWRITERPOINTS"/>
+		<Row>
+			<ModifierId>ORACLE_GREATWRITERPOINTS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_WRITER</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_GREATWRITERPOINTS</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Delete ModifierId="ORACLE_PATRONAGE_FAITH_DISCOUNT"/>
+		<Row>
+			<ModifierId>ORACLE_PATRONAGE_FAITH_DISCOUNT</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>ORACLE_PATRONAGE_FAITH_DISCOUNT</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
 		<!--大灯塔 海岸金币+3-->
 		<Row>
 			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
@@ -75,6 +182,24 @@
 			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
 			<Name>Amount</Name>
 			<Value>3</Value>
+		</Row>
+		<!--巨像 贸易路线+2,获得2商队-->
+		<Delete ModifierId="COLOSSUS_ADDTRADEROUTE"/>
+		<Row>
+			<ModifierId>COLOSSUS_ADDTRADEROUTE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Delete ModifierId="COLOSSUS_GRANT_TRADER"/>
+		<Row>
+			<ModifierId>COLOSSUS_GRANT_TRADER</ModifierId>
+			<Name>UnitType</Name>
+			<Value>UNIT_TRADER</Value>
+		</Row>
+		<Row>
+			<ModifierId>COLOSSUS_GRANT_TRADER</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
 		</Row>
 	</ModifierArguments>
 </GameInfo>

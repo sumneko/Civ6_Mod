@@ -9,9 +9,17 @@
 	<Row Tag="LOC_MOE_BUILDING_PYRAMIDS_DESCRIPTION">
 		<Text>Grants a free Builder. All Builders can build 2 extra improvement. Must be built on Desert (including Floodplains) without Hills.</Text>
 	</Row>
+    <!--神谕-->
+	<Row Tag="LOC_MOE_BUILDING_ORACLE_DESCRIPTION">
+		<Text>Patronage of Great People costs 50% less [ICON_Faith] Faith. Districts in this city provide +4 [ICON_GreatPerson] Great Person points of their type (for example, [ICON_GreatWriter] Great Writer points from the Theater Square district). Must be built on Hills.</Text>
+	</Row>
     <!--大灯塔-->
 	<Row Tag="LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION">
 		<Text>+1 [ICON_Movement] Movement for all naval units[NEWLINE][NEWLINE] +2 [ICON_Gold] Gold on all Coast tiles for this city. Must be built on the Coast, and adjacent to land and a Harbor district with a Lighthouse.</Text>
+	</Row>
+    <!--巨像-->
+	<Row Tag="LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION">
+		<Text>+2 [ICON_TradeRoute] Trade Route capacity. Grants 2 Trader unit. Must be built on the Coast, adjacent to land and a Harbor district.</Text>
 	</Row>
 </BaseGameText>
 <LocalizedText>
@@ -23,9 +31,17 @@
     <Replace Tag="LOC_MOE_BUILDING_PYRAMIDS_DESCRIPTION" Language="zh_Hans_CN">
       <Text>赠予1个免费建造者。所有建造者可建造2个额外的改良设施。必须建在没有丘陵的沙漠上（包括泛滥平原）。</Text>
     </Replace>
+    <!--神谕-->
+    <Replace Tag="LOC_MOE_BUILDING_ORACLE_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>伟人赞助消耗的 [ICON_Faith] 信仰值减少50%。该城市区域为它们类型的 [ICON_GreatPerson] 伟人点数+4（比如，来自剧院广场区的 [ICON_GreatWriter] 大作家点数）。必须建在丘陵上。</Text>
+    </Replace>
     <!--大灯塔-->
     <Replace Tag="LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
       <Text>所有海军单位的 [ICON_Movement] 移动力+1[NEWLINE][NEWLINE]该城市的所有海岸单元格+2 [ICON_Gold] 金币。必须建在靠近已有灯塔的港口的海岸上。</Text>
+    </Replace>
+    <!--巨像-->
+    <Replace Tag="LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>+2 [ICON_TradeRoute] 贸易路线容量。授予2个商人单位。必须建在邻近陆地和港口的海岸上。</Text>
     </Replace>
 </LocalizedText>
 </GameData>
