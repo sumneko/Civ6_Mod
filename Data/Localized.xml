@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameData>
+<LocalizedText>
+	<!--灯塔-->
+	<Replace Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>在该城市训练的所有海军单位+25%战斗经验值。该城市的所有海岸单元格+2 [ICON_FOOD] 食物。</Text>
+    </Replace>
+</LocalizedText>
+</GameData>

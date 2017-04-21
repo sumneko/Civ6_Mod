@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <GameInfo>
 	<Buildings>
 		<Delete BuildingType="BUILDING_ARENA" />
@@ -26,6 +26,7 @@
 		<Update>
 			<Where BuildingType="BUILDING_LIGHTHOUSE"/>
 			<Set>
+				<Description>LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION</Description>
 				<Cost>60</Cost>
 				<PrereqTech>TECH_SAILING</PrereqTech>
 				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
@@ -33,6 +34,9 @@
 		</Update>
 	</Buildings>
 	<Building_YieldChanges>
+		<!--灯塔-->
+		<Delete BuildingType="BUILDING_LIGHTHOUSE" />
+		
 		<Delete BuildingType="BUILDING_WORKSHOP" />
 		<Row BuildingType="BUILDING_WORKSHOP" YieldType="YIELD_PRODUCTION" YieldChange="4"/>
 		<Delete BuildingType="BUILDING_POWER_PLANT" />
@@ -608,6 +612,19 @@
 		</Row>
 	</TraitModifiers>
 	<ModifierArguments>
+		<!--Plot Yield-->
+		<!--灯塔 海岸提供的食物-->
+		<Delete ModifierId="LIGHTHOUSE_COAST_FOOD" />
+		<Row>
+			<ModifierId>LIGHTHOUSE_COAST_FOOD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>LIGHTHOUSE_COAST_FOOD</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
 		<!--KONGO-->
 		<Delete ModifierId="TRAIT_DOUBLE_WRITER_POINTS" />
 		<Delete ModifierId="TRAIT_DOUBLE_ARTIST_POINTS" />

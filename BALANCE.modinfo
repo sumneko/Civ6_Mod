@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Mod id="Moe" version="1">
 	<Properties>
 		<Name>萌</Name>
@@ -9,14 +9,20 @@
 		<EnabledByDefault>1</EnabledByDefault>
 		<EnabledAtStartup>0</EnabledAtStartup>
 	</Properties>
+	<Files>
+		<File>Data/Balanced.xml</File>
+		<File>Data/Localized.xml</File>
+	</Files>
 	<Components>
-		<UpdateDatabase id="BALANCE_DATA">
+		<UpdateDatabase id="Moe">
 			<Items>
 				<File>Data/Balanced.xml</File>
 			</Items>
 		</UpdateDatabase>
+		<LocalizedText>
+		    <Items>	
+			    <File>Data/Localized.xml</File>
+			</Items>	
+		</LocalizedText>
 	</Components>
-	<Files>
-		<File>Data/Balanced.xml</File>
-	</Files>
 </Mod>
