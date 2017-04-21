@@ -8,25 +8,8 @@
 				<Description>LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION</Description>
 			</Set>
 		</Update>
-
-		<!--纪念碑作弊
-		<Update>
-			<Where BuildingType="BUILDING_MONUMENT"/>
-			<Set>
-				<Cost>1</Cost>
-				<Housing>1000</Housing>
-				<CitizenSlots>1000</CitizenSlots>
-			</Set>
-		</Update>
-		-->
 	</Buildings>
 	<Building_YieldChanges>
-		<!--纪念碑作弊
-		<Delete BuildingType="BUILDING_MONUMENT" />
-		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_PRODUCTION" YieldChange="1000"/>
-		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_SCIENCE" YieldChange="1000"/>
-		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_GOLD" YieldChange="1000"/>
-		-->
 		<!--灯塔-->
 		<Delete BuildingType="BUILDING_LIGHTHOUSE" />
 	</Building_YieldChanges>
