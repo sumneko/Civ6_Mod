@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GameData>
+<BaseGameText>
+	<!--灯塔-->
+	<Row Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION">
+		<Text>+25% combat experience for all naval units trained in this city. +2 [ICON_FOOD] Food on all Coast tiles for this city.</Text>
+	</Row>
+	<!--港口-->
+	<Row Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION">
+		<Text>A district for naval activity in your city. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. +1 [ICON_Production] Production on all Coast tiles for this city. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Commercial Hub district.</Text>
+	</Row>
+</BaseGameText>
 <LocalizedText>
 	<!--灯塔-->
 	<Replace Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
