@@ -8,6 +8,20 @@
 				<Description>LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION</Description>
 			</Set>
 		</Update>
+		<!--金字塔-->
+		<Update>
+			<Where BuildingType="BUILDING_PYRAMIDS"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_PYRAMIDS_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--大灯塔-->
+		<Update>
+			<Where BuildingType="BUILDING_GREAT_LIGHTHOUSE"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION</Description>
+			</Set>
+		</Update>
 	</Buildings>
 	<Building_YieldChanges>
 		<!--巨石阵 信仰+3 文化+3 科技+3-->
@@ -15,7 +29,27 @@
 		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_SCIENCE" YieldChange="3"/>
 		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_CULTURE" YieldChange="3"/>
 		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_FAITH" YieldChange="3"/>
+		<!--金字塔 文化+5-->
+		<Delete BuildingType="BUILDING_PYRAMIDS"/>
+		<Row BuildingType="BUILDING_PYRAMIDS" YieldType="YIELD_CULTURE" YieldChange="5"/>
+		<!--大灯塔 金币+0-->
+		<Delete BuildingType="BUILDING_GREAT_LIGHTHOUSE"/>
 	</Building_YieldChanges>
+	<BuildingModifiers>
+		<!--大灯塔 海岸金币+3-->
+		<Row>
+			<BuildingType>BUILDING_GREAT_LIGHTHOUSE</BuildingType>
+			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
+		</Row>
+	</BuildingModifiers>
+	<Modifiers>
+		<!--大灯塔 海岸金币+3-->
+		<Row>
+			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
+			<ModifierType>MODIFIER_CITY_PLOT_YIELDS_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>PLOT_HAS_COAST_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
 	<ModifierArguments>
 		<!--空中花园 城市发展加速30%-->
 		<Delete ModifierId="HANGING_GARDEN_ADDGROWTH"/>
@@ -23,6 +57,24 @@
 			<ModifierId>HANGING_GARDEN_ADDGROWTH</ModifierId>
 			<Name>Amount</Name>
 			<Value>30</Value>
+		</Row>
+		<!--金字塔 建造者劳动力+2-->
+		<Delete ModifierId="PYRAMID_ADJUST_BUILDER_CHARGES"/>
+		<Row>
+			<ModifierId>PYRAMID_ADJUST_BUILDER_CHARGES</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<!--大灯塔 海岸金币+3-->
+		<Row>
+			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>GREAT_LIGHTHOUSE_COAST_GOLD</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
 		</Row>
 	</ModifierArguments>
 </GameInfo>

@@ -5,11 +5,27 @@
 	<Row Tag="LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION">
 		<Text>Increases growth by 30% in all cities. Must be built next to a River.</Text>
 	</Row>
+    <!--金字塔-->
+	<Row Tag="LOC_MOE_BUILDING_PYRAMIDS_DESCRIPTION">
+		<Text>Grants a free Builder. All Builders can build 2 extra improvement. Must be built on Desert (including Floodplains) without Hills.</Text>
+	</Row>
+    <!--大灯塔-->
+	<Row Tag="LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION">
+		<Text>+1 [ICON_Movement] Movement for all naval units[NEWLINE][NEWLINE] +2 [ICON_Gold] Gold on all Coast tiles for this city. Must be built on the Coast, and adjacent to land and a Harbor district with a Lighthouse.</Text>
+	</Row>
 </BaseGameText>
 <LocalizedText>
 	<!--空中花园-->
     <Replace Tag="LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="zh_Hans_CN">
       <Text>所有城市发展加速30%。必须建在河流旁边。</Text>
+    </Replace>
+    <!--金字塔-->
+    <Replace Tag="LOC_MOE_BUILDING_PYRAMIDS_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>赠予1个免费建造者。所有建造者可建造2个额外的改良设施。必须建在没有丘陵的沙漠上（包括泛滥平原）。</Text>
+    </Replace>
+    <!--大灯塔-->
+    <Replace Tag="LOC_MOE_BUILDING_GREAT_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>所有海军单位的 [ICON_Movement] 移动力+1[NEWLINE][NEWLINE]该城市的所有海岸单元格+2 [ICON_Gold] 金币。必须建在靠近已有灯塔的港口的海岸上。</Text>
     </Replace>
 </LocalizedText>
 </GameData>
