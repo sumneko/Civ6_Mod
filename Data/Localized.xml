@@ -9,6 +9,10 @@
 	<Row Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION">
 		<Text>A district for naval activity in your city. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. +1 [ICON_Production] Production on all Coast tiles for this city. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Commercial Hub district.</Text>
 	</Row>
+	<!--渔船-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food. +1 [ICON_Production] Production. Can only be built on Coast or be built on Ocean resources.[NEWLINE][NEWLINE]If built on [ICON_RESOURCE_PEARLS] Pearls or [ICON_RESOURCE_WHALES] Whales, the city will gain use of that resource.</Text>
+	</Row>
 </BaseGameText>
 <LocalizedText>
 	<!--灯塔-->
@@ -18,6 +22,10 @@
 	<!--港口-->
 	<Replace Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION" Language="zh_Hans_CN">
     	<Text>您城市里的海军活动区。同时移除从该单元格的上船、下船 [ICON_Movement] 移动力消耗。该城市的所有海岸单元格+1 [ICON_Production] 生产力。[NEWLINE][NEWLINE]如此城尚未拥有商业中心区域，[ICON_TradeRoute] 贸易路线容量+1。</Text>
+    </Replace>
+	<!--渔船-->
+	<Replace Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="zh_Hans_CN">
+    	<Text>解锁建造者建造渔船的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+1 [ICON_Production] 生产力。只能在海岸上建造或在海洋资源上建造。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_PEARLS] 珍珠或 [ICON_RESOURCE_WHALES] 鲸鱼资源上，城市将能使用这些资源。</Text>
     </Replace>
 </LocalizedText>
 </GameData>

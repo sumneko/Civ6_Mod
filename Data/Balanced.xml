@@ -174,6 +174,26 @@
 			<ModifierId>HARBOR_COAST_PRODUCTION</ModifierId>
 		</Row>
 	</DistrictModifiers>
+	<Improvements>
+		<!--渔船-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_FISHING_BOATS"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION</Description>
+			</Set>
+		</Update>
+	</Improvements>
+	<Improvement_YieldChanges>
+		<!--渔船 食物+1 生产力+1 注意要保留金币+0,有科技会加成金币-->
+		<Delete ImprovementType="IMPROVEMENT_FISHING_BOATS" />
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_FOOD" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_GOLD" YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+	</Improvement_YieldChanges>
+	<Improvement_ValidTerrains>
+		<!--渔船 允许建造在无资源的海岸上-->
+		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" TerrainType="TERRAIN_COAST"/>
+	</Improvement_ValidTerrains>
 	<Modifiers>
 		<!--港口 提供贸易路线-->
 		<Delete ModifierId="HARBOR_TRADE_ROUTE_CAPACITY" />
