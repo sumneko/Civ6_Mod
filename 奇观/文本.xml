@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GameData>
+<BaseGameText>
+	<!--空中花园-->
+	<Row Tag="LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION">
+		<Text>Increases growth by 30% in all cities. Must be built next to a River.</Text>
+	</Row>
+</BaseGameText>
+<LocalizedText>
+	<!--空中花园-->
+    <Replace Tag="LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>所有城市发展加速30%。必须建在河流旁边。</Text>
+    </Replace>
+</LocalizedText>
+</GameData>

@@ -14,11 +14,13 @@
 		<File>单位/数据.xml</File>
 		<File>改良/数据.xml</File>
 		<File>建筑/数据.xml</File>
+		<File>奇观/数据.xml</File>
 		
 		<File>城区/文本.xml</File>
 		<File>单位/文本.xml</File>
 		<File>改良/文本.xml</File>
 		<File>建筑/文本.xml</File>
+		<File>奇观/文本.xml</File>
 	</Files>
 	<Components>
 		<UpdateDatabase id="Moe">
@@ -27,6 +29,7 @@
 				<File>单位/数据.xml</File>
 				<File>改良/数据.xml</File>
 				<File>建筑/数据.xml</File>
+				<File>奇观/数据.xml</File>
 			</Items>
 		</UpdateDatabase>
 		<LocalizedText>
@@ -35,6 +38,7 @@
 				<File>单位/文本.xml</File>
 				<File>改良/文本.xml</File>
 				<File>建筑/文本.xml</File>
+				<File>奇观/文本.xml</File>
 			</Items>	
 		</LocalizedText>
 	</Components>

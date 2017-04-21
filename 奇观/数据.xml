@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GameInfo>
+	<Buildings>
+		<!--空中花园-->
+		<Update>
+			<Where BuildingType="BUILDING_HANGING_GARDENS"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_HANGING_GARDENS_DESCRIPTION</Description>
+			</Set>
+		</Update>
+	</Buildings>
+	<Building_YieldChanges>
+		<!--巨石阵 信仰+3 文化+3 科技+3-->
+		<Delete BuildingType="BUILDING_STONEHENGE"/>
+		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_SCIENCE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_CULTURE" YieldChange="3"/>
+		<Row BuildingType="BUILDING_STONEHENGE" YieldType="YIELD_FAITH" YieldChange="3"/>
+	</Building_YieldChanges>
+	<ModifierArguments>
+		<!--空中花园 城市发展加速30%-->
+		<Delete ModifierId="HANGING_GARDEN_ADDGROWTH"/>
+		<Row>
+			<ModifierId>HANGING_GARDEN_ADDGROWTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>30</Value>
+		</Row>
+	</ModifierArguments>
+</GameInfo>
