@@ -496,6 +496,12 @@
 			<ModifierId>TRAIT_CULTURE_PER_FOREIGN_CITY_FOLLOWING_RELIGION</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_RELIGION_ADD_PLAYER_BELIEF_YIELD</ModifierType>
 		</Row>
+		<!--港口-->
+		<Delete ModifierId="HARBOR_TRADE_ROUTE_CAPACITY" />
+	    <Row>
+	      <ModifierId>HARBOR_TRADE_ROUTE_CAPACITY</ModifierId>
+	      <ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+	    </Row>
 	</Modifiers>
 	<TraitModifiers>
 		<!--ARABIA-->
