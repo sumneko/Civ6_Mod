@@ -11,8 +11,25 @@
 				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
 			</Set>
 		</Update>
+
+		<!--纪念碑作弊
+		<Update>
+			<Where BuildingType="BUILDING_MONUMENT"/>
+			<Set>
+				<Cost>1</Cost>
+				<Housing>1000</Housing>
+				<CitizenSlots>1000</CitizenSlots>
+			</Set>
+		</Update>
+		-->
 	</Buildings>
 	<Building_YieldChanges>
+		<!--纪念碑作弊
+		<Delete BuildingType="BUILDING_MONUMENT" />
+		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_PRODUCTION" YieldChange="1000"/>
+		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_SCIENCE" YieldChange="1000"/>
+		<Row BuildingType="BUILDING_MONUMENT" YieldType="YIELD_GOLD" YieldChange="1000"/>
+		-->
 		<!--灯塔-->
 		<Delete BuildingType="BUILDING_LIGHTHOUSE" />
 	</Building_YieldChanges>
@@ -182,6 +199,13 @@
 				<Description>LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION</Description>
 			</Set>
 		</Update>
+		<!--采石场-->
+		<Update>
+			<Where ImprovementType="IMPROVEMENT_QUARRY"/>
+			<Set>
+				<Description>LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION</Description>
+			</Set>
+		</Update>
 	</Improvements>
 	<Improvement_YieldChanges>
 		<!--渔船 食物+1 生产力+1 注意要保留金币+0,有科技会加成金币-->
@@ -189,6 +213,11 @@
 		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_FOOD" YieldChange="1"/>
 		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_GOLD" YieldChange="0"/>
 		<Row ImprovementType="IMPROVEMENT_FISHING_BOATS" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<!--采石场 生产力+1 文化+1 注意要保留金币+0,有科技会加成金币-->
+		<Delete ImprovementType="IMPROVEMENT_QUARRY" />
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_GOLD" YieldChange="0"/>
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_PRODUCTION" YieldChange="1"/>
+		<Row ImprovementType="IMPROVEMENT_QUARRY" YieldType="YIELD_CULTURE" YieldChange="1"/>
 	</Improvement_YieldChanges>
 	<Improvement_ValidTerrains>
 		<!--渔船 允许建造在无资源的海岸上-->

@@ -13,6 +13,10 @@
 	<Row Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION">
 		<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food. +1 [ICON_Production] Production. Can only be built on Coast or be built on Ocean resources.[NEWLINE][NEWLINE]If built on [ICON_RESOURCE_PEARLS] Pearls or [ICON_RESOURCE_WHALES] Whales, the city will gain use of that resource.</Text>
 	</Row>
+	<!--采石场-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Quarries.[NEWLINE][NEWLINE]+1 [ICON_Production] Production, +1 [ICON_Culture] Culture. -1 Appeal. Can only be built on [ICON_RESOURCE_STONE] Stone, [ICON_RESOURCE_MARBLE] Marble, or [ICON_RESOURCE_GYPSUM] Gypsum resources.[NEWLINE][NEWLINE]If built on a Luxury resource, the city will gain use of that resource.</Text>
+	</Row>
 </BaseGameText>
 <LocalizedText>
 	<!--灯塔-->
@@ -26,6 +30,10 @@
 	<!--渔船-->
 	<Replace Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="zh_Hans_CN">
     	<Text>解锁建造者建造渔船的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+1 [ICON_Production] 生产力。只能在海岸上建造或在海洋资源上建造。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_PEARLS] 珍珠或 [ICON_RESOURCE_WHALES] 鲸鱼资源上，城市将能使用这些资源。</Text>
+    </Replace>
+	<!--采石场-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造采石场的能力。[NEWLINE][NEWLINE]+1 [ICON_Production] 生产力，+1 [ICON_Culture] 文化值。-1魅力。只能建在 [ICON_RESOURCE_STONE] 石头、 [ICON_RESOURCE_MARBLE] 大理石、或 [ICON_RESOURCE_GYPSUM] 石膏资源上。[NEWLINE][NEWLINE]如果建在奢侈品资源上，城市则可以利用此资源。</Text>
     </Replace>
 </LocalizedText>
 </GameData>
