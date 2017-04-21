@@ -3,37 +3,103 @@
 <BaseGameText>
 	<!--灯塔-->
 	<Row Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION">
-		<Text>+25% combat experience for all naval units trained in this city. +2 [ICON_FOOD] Food on all Coast tiles for this city.</Text>
+	  <Text>+25% combat experience for all naval units trained in this city. +2 [ICON_FOOD] Food on all Coast tiles for this city.</Text>
 	</Row>
 	<!--港口-->
 	<Row Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION">
-		<Text>A district for naval activity in your city. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. +1 [ICON_Production] Production on all Coast tiles for this city. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Commercial Hub district.</Text>
+	  <Text>A district for naval activity in your city. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. +1 [ICON_Production] Production on all Coast tiles for this city. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Commercial Hub district.</Text>
 	</Row>
-	<!--渔船-->
-	<Row Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION">
-		<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food. +1 [ICON_Production] Production. Can only be built on Coast or be built on Ocean resources.[NEWLINE][NEWLINE]If built on [ICON_RESOURCE_PEARLS] Pearls or [ICON_RESOURCE_WHALES] Whales, the city will gain use of that resource.</Text>
+	
+	<!--农场-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_FARM_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Farms.[NEWLINE][NEWLINE]+2 [ICON_Food] Food. Can only be built on Grassland or Plains.[NEWLINE][NEWLINE]Constructing farms adjacent to other Farms provides bonuses to Housing.</Text>
+	</Row>
+	<!--矿井-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_MINE_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Mines.[NEWLINE][NEWLINE]+2 [ICON_Production] Production. -1 Appeal. Can only be built on Hills or certain resources.[NEWLINE][NEWLINE]If built on Luxury or Strategic resources, city will gain use of that resource.</Text>
 	</Row>
 	<!--采石场-->
 	<Row Tag="LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION">
-		<Text>Unlocks the Builder ability to construct Quarries.[NEWLINE][NEWLINE]+1 [ICON_Production] Production, +1 [ICON_Culture] Culture. -1 Appeal. Can only be built on [ICON_RESOURCE_STONE] Stone, [ICON_RESOURCE_MARBLE] Marble, or [ICON_RESOURCE_GYPSUM] Gypsum resources.[NEWLINE][NEWLINE]If built on a Luxury resource, the city will gain use of that resource.</Text>
+		<Text>Unlocks the Builder ability to construct Quarries.[NEWLINE][NEWLINE]+1 [ICON_Production] Production, +2 [ICON_Gold] Gold. -1 Appeal. Can only be built on [ICON_RESOURCE_STONE] Stone, [ICON_RESOURCE_MARBLE] Marble, or [ICON_RESOURCE_GYPSUM] Gypsum resources.[NEWLINE][NEWLINE]If built on a Luxury resource, the city will gain use of that resource.</Text>
+	</Row>
+	<!--渔船-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Fishing Boats.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_Production] Production. Can only be built on Coast or be built on Ocean resources.[NEWLINE][NEWLINE]If built on [ICON_RESOURCE_PEARLS] Pearls or [ICON_RESOURCE_WHALES] Whales, the city will gain use of that resource.</Text>
+	</Row>
+	<!--牧场-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_PASTURE_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Pastures.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +1 [ICON_Production] Production. Can only be built on [ICON_RESOURCE_CATTLE] Cattle, [ICON_RESOURCE_SHEEP] Sheep, or [ICON_RESOURCE_HORSES] Horse resources.[NEWLINE][NEWLINE]If built on a [ICON_RESOURCE_HORSES] Horse resource, the city will gain use of that resource.</Text>
+	</Row>
+	<!--种植园-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_PLANTATION_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Plantations.[NEWLINE][NEWLINE]+1 [ICON_Food] Food, +2 [ICON_Gold] Gold. Can only be built on [ICON_RESOURCE_BANANAS] Bananas, [ICON_RESOURCE_CITRUS] Citrus, [ICON_RESOURCE_COCOA] Cocoa, [ICON_RESOURCE_COFFEE] Coffee, [ICON_RESOURCE_COTTON] Cotton, [ICON_RESOURCE_DYES] Dyes, [ICON_RESOURCE_SILK] Silk, [ICON_RESOURCE_SPICES] Spices, [ICON_RESOURCE_SUGAR] Sugar, [ICON_RESOURCE_TEA] Tea, [ICON_RESOURCE_TOBACCO] Tobacco, or [ICON_RESOURCE_WINE] Wine resources.[NEWLINE][NEWLINE]If built on a Luxury resource, the city will gain use of that resource.</Text>
+	</Row>
+	<!--营地-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_CAMP_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct Camps.[NEWLINE][NEWLINE]+1 [ICON_Production] Production, +2 [ICON_Gold] Gold. Can only be built on [ICON_RESOURCE_FURS] Fur, [ICON_RESOURCE_IVORY] Ivory, [ICON_RESOURCE_DEER] Deer, or [ICON_RESOURCE_TRUFFLES] Truffle resources.[NEWLINE][NEWLINE]If built on a Luxury resource like [ICON_RESOURCE_FURS] Fur, [ICON_RESOURCE_TRUFFLES] Truffles, or [ICON_RESOURCE_IVORY] Ivory, the city will gain use of that resource.</Text>
+	</Row>
+	<!--伐木场-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_LUMBER_MILL_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct a Lumber Mill.[NEWLINE][NEWLINE]+2 [ICON_Production] Production. +1 [ICON_Production] Production if adjacent to River. Can only be built on Woods.</Text>
+	</Row>
+	<!--油井-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_OIL_WELL_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct an Oil Well.[NEWLINE][NEWLINE]+2 [ICON_Production] Production, +4 [ICON_Gold] Gold. -1 Appeal. Can only be built on [ICON_RESOURCE_OIL] Oil.</Text>
+	</Row>
+	<!--海上石油钻机-->
+	<Row Tag="LOC_MOE_IMPROVEMENT_OFFSHORE_OIL_RIG_DESCRIPTION">
+		<Text>Unlocks the Builder ability to construct an Offshore Oil Rig.[NEWLINE][NEWLINE]+2 [ICON_Production] Production, +2 [ICON_Science] Science. -1 Appeal. Can only be built on [ICON_RESOURCE_OIL] Oil.</Text>
 	</Row>
 </BaseGameText>
 <LocalizedText>
 	<!--灯塔-->
 	<Replace Tag="LOC_MOE_BUILDING_LIGHTHOUSE_DESCRIPTION" Language="zh_Hans_CN">
-    	<Text>在该城市训练的所有海军单位+25%战斗经验值。该城市的所有海岸单元格+2 [ICON_FOOD] 食物。</Text>
+      <Text>在该城市训练的所有海军单位+25%战斗经验值。该城市的所有海岸单元格+2 [ICON_FOOD] 食物。</Text>
     </Replace>
 	<!--港口-->
 	<Replace Tag="LOC_MOE_DISTRICT_HARBOR_DESCRIPTION" Language="zh_Hans_CN">
-    	<Text>您城市里的海军活动区。同时移除从该单元格的上船、下船 [ICON_Movement] 移动力消耗。该城市的所有海岸单元格+1 [ICON_Production] 生产力。[NEWLINE][NEWLINE]如此城尚未拥有商业中心区域，[ICON_TradeRoute] 贸易路线容量+1。</Text>
+      <Text>您城市里的海军活动区。同时移除从该单元格的上船、下船 [ICON_Movement] 移动力消耗。该城市的所有海岸单元格+1 [ICON_Production] 生产力。[NEWLINE][NEWLINE]如此城尚未拥有商业中心区域，[ICON_TradeRoute] 贸易路线容量+1。</Text>
     </Replace>
-	<!--渔船-->
-	<Replace Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="zh_Hans_CN">
-    	<Text>解锁建造者建造渔船的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+1 [ICON_Production] 生产力。只能在海岸上建造或在海洋资源上建造。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_PEARLS] 珍珠或 [ICON_RESOURCE_WHALES] 鲸鱼资源上，城市将能使用这些资源。</Text>
+    
+	<!--农场-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_FARM_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造农场的能力。[NEWLINE][NEWLINE]+2 [ICON_Food] 食物。只能建在草原或平原上。[NEWLINE][NEWLINE]农场与农场相邻，能提供住房加成。</Text>
+    </Replace>
+	<!--矿井-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_MINE_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造矿山的能力。[NEWLINE][NEWLINE]+2 [ICON_Production] 生产力。-1魅力。只能建造丘陵或特定资源上。[NEWLINE][NEWLINE]如果建在奢侈品资源或战略资源上，城市则可以利用此资源。</Text>
     </Replace>
 	<!--采石场-->
     <Replace Tag="LOC_MOE_IMPROVEMENT_QUARRY_DESCRIPTION" Language="zh_Hans_CN">
-      <Text>解锁建造者建造采石场的能力。[NEWLINE][NEWLINE]+1 [ICON_Production] 生产力，+1 [ICON_Culture] 文化值。-1魅力。只能建在 [ICON_RESOURCE_STONE] 石头、 [ICON_RESOURCE_MARBLE] 大理石、或 [ICON_RESOURCE_GYPSUM] 石膏资源上。[NEWLINE][NEWLINE]如果建在奢侈品资源上，城市则可以利用此资源。</Text>
+      <Text>解锁建造者建造采石场的能力。[NEWLINE][NEWLINE]+1 [ICON_Production] 生产力，+2 [ICON_Gold] 金币。-1魅力。只能建在 [ICON_RESOURCE_STONE] 石头、 [ICON_RESOURCE_MARBLE] 大理石、或 [ICON_RESOURCE_GYPSUM] 石膏资源上。[NEWLINE][NEWLINE]如果建在奢侈品资源上，城市则可以利用此资源。</Text>
+    </Replace>
+	<!--渔船-->
+	<Replace Tag="LOC_MOE_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造渔船的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+1 [ICON_Production] 生产力。只能在海岸上建造或在海洋资源上建造。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_PEARLS] 珍珠或 [ICON_RESOURCE_WHALES] 鲸鱼资源上，城市将能使用这些资源。</Text>
+    </Replace>
+	<!--牧场-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_PASTURE_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造牧场的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+1 [ICON_Production] 生产力。只能建在 [ICON_RESOURCE_CATTLE] 牛、 [ICON_RESOURCE_SHEEP] 羊、或 [ICON_RESOURCE_HORSES] 马匹资源上。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_HORSES] 马匹资源上，城市将能使用这种资源。</Text>
+    </Replace>
+	<!--种植园-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_PLANTATION_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造种植园的能力。[NEWLINE][NEWLINE]+1 [ICON_Food] 食物，+2 [ICON_Gold] 金币。只能建在 [ICON_RESOURCE_BANANAS] 香蕉、 [ICON_RESOURCE_CITRUS] 柑橘、 [ICON_RESOURCE_COCOA] 可可豆、 [ICON_RESOURCE_COFFEE] 咖啡、 [ICON_RESOURCE_COTTON] 棉花、 [ICON_RESOURCE_DYES] 染料、 [ICON_RESOURCE_SILK] 丝绸、 [ICON_RESOURCE_SPICES] 香料、  [ICON_RESOURCE_SUGAR] 糖、 [ICON_RESOURCE_TEA] 茶、 [ICON_RESOURCE_TOBACCO] 烟草，或 [ICON_RESOURCE_WINE] 葡萄酒资源上。[NEWLINE][NEWLINE]如果建造在奢侈品资源上，城市将能使用这种资源。</Text>
+    </Replace>
+	<!--营地-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_CAMP_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造营地的能力。[NEWLINE][NEWLINE]+1 [ICON_Production] 生产力，+2 [ICON_Gold] 金币。只能在 [ICON_RESOURCE_FURS] 皮草资源、 [ICON_RESOURCE_IVORY] 象牙资源、 [ICON_RESOURCE_DEER] 鹿资源、或 [ICON_RESOURCE_TRUFFLES] 松露资源上建造。[NEWLINE][NEWLINE]如果建在 [ICON_RESOURCE_FURS] 毛皮、 [ICON_RESOURCE_TRUFFLES] 松露，或 [ICON_RESOURCE_IVORY] 象牙这样的奢侈品资源上，城市将能使用这种资源。</Text>
+    </Replace>
+	<!--伐木场-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_LUMBER_MILL_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造伐木场的能力。[NEWLINE][NEWLINE]+2 [ICON_Production] 生产力。如果靠近河流，再+1 [ICON_Production] 生产力。只能建在树林里。</Text>
+    </Replace>
+	<!--油井-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_OIL_WELL_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造油井的能力。[NEWLINE][NEWLINE]+2 [ICON_Production] 生产力，+4 [ICON_Gold] 金币。-1魅力。只能建在 [ICON_RESOURCE_OIL] 石油资源上。</Text>
+    </Replace>
+	<!--海上石油钻机-->
+    <Replace Tag="LOC_MOE_IMPROVEMENT_OFFSHORE_OIL_RIG_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>解锁建造者建造海上石油钻机的能力。[NEWLINE][NEWLINE]+2 [ICON_Production] 生产力，+2 [ICON_Science] 科技值。-1魅力。只能建在 [ICON_RESOURCE_OIL] 石油资源上。</Text>
     </Replace>
 </LocalizedText>
 </GameData>
