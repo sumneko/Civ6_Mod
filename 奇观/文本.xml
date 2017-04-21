@@ -21,6 +21,14 @@
 	<Row Tag="LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION">
 		<Text>+2 [ICON_TradeRoute] Trade Route capacity. Grants 2 Trader unit. Must be built on the Coast, adjacent to land and a Harbor district.</Text>
 	</Row>
+    <!--佩特拉古城-->
+	<Row Tag="LOC_MOE_BUILDING_PETRA_DESCRIPTION">
+		<Text>+3 [ICON_Food] Food, +3 [ICON_Gold] Gold, and +3 [ICON_Production] Production on all Desert tiles for this city (non-Floodplains). Must be built on Desert or Floodplains without Hills.</Text>
+	</Row>
+    <!--兵马俑-->
+	<Row Tag="LOC_MOE_BUILDING_TERRACOTTA_ARMY_DESCRIPTION">
+		<Text>All current units gain 3 promotion level. All Archaeologists from the owner may enter foreign lands without Open Borders. Must be built on flat Grassland or Plains adjacent to an Encampment district with a Barracks or Stable.</Text>
+	</Row>
 </BaseGameText>
 <LocalizedText>
 	<!--空中花园-->
@@ -42,6 +50,14 @@
     <!--巨像-->
     <Replace Tag="LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION" Language="zh_Hans_CN">
       <Text>+2 [ICON_TradeRoute] 贸易路线容量。授予2个商人单位。必须建在邻近陆地和港口的海岸上。</Text>
+    </Replace>
+    <!--佩特拉古城-->
+    <Replace Tag="LOC_MOE_BUILDING_PETRA_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>为该城市所有沙漠单元格（非泛滥平原）+3 [ICON_Food] 食物，+3 [ICON_Gold] 金币，+3 [ICON_Production] 生产力。必须建在没有丘陵的沙漠或泛滥平原上。</Text>
+    </Replace>
+    <!--兵马俑-->
+    <Replace Tag="LOC_MOE_BUILDING_TERRACOTTA_ARMY_DESCRIPTION" Language="zh_Hans_CN">
+      <Text>目前所有单位获得3级强化升级。所拥有的考古学家可在没有开放边境的情况下进入外国。必须建在平坦的草原或平原上，且靠近带有兵营或马厩的军营区域。</Text>
     </Replace>
 </LocalizedText>
 </GameData>

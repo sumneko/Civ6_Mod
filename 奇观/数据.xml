@@ -36,6 +36,20 @@
 				<Description>LOC_MOE_BUILDING_COLOSSUS_DESCRIPTION</Description>
 			</Set>
 		</Update>
+		<!--佩特拉古城-->
+		<Update>
+			<Where BuildingType="BUILDING_PETRA"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_PETRA_DESCRIPTION</Description>
+			</Set>
+		</Update>
+		<!--兵马俑-->
+		<Update>
+			<Where BuildingType="BUILDING_TERRACOTTA_ARMY"/>
+			<Set>
+				<Description>LOC_MOE_BUILDING_TERRACOTTA_ARMY_DESCRIPTION</Description>
+			</Set>
+		</Update>
 	</Buildings>
 	<Building_YieldChanges>
 		<!--巨石阵 信仰+3 文化+3 科技+3-->
@@ -200,6 +214,47 @@
 			<ModifierId>COLOSSUS_GRANT_TRADER</ModifierId>
 			<Name>Amount</Name>
 			<Value>2</Value>
+		</Row>
+		<!--佩特拉古城 +3生产力 +3食物 +3金币-->
+		<Delete ModifierId="PETRA_DESERT_FOOD_MODIFIER"/>
+		<Row>
+			<ModifierId>PETRA_DESERT_FOOD_MODIFIER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>PETRA_DESERT_FOOD_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Delete ModifierId="PETRA_DESERT_GOLD_MODIFIER"/>
+		<Row>
+			<ModifierId>PETRA_DESERT_GOLD_MODIFIER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>PETRA_DESERT_GOLD_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Delete ModifierId="PETRA_DESERT_PRODUCTION_MODIFIER"/>
+		<Row>
+			<ModifierId>PETRA_DESERT_PRODUCTION_MODIFIER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>PETRA_DESERT_PRODUCTION_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<!--兵马俑 单位获得3次升级-->
+		<Delete ModifierId="TERRACOTTA_ARMY_LEVEL_UP_UNITS"/>
+		<Row>
+			<ModifierId>TERRACOTTA_ARMY_LEVEL_UP_UNITS</ModifierId>
+			<Name>Amount</Name>
+			<Value>-3</Value>
 		</Row>
 	</ModifierArguments>
 </GameInfo>
