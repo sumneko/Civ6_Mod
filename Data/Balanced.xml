@@ -22,6 +22,15 @@
 		<Row BuildingType="BUILDING_COLOSSEUM" Name="LOC_BUILDING_COLOSSEUM_NAME" Description="LOC_BUILDING_COLOSSEUM_DESCRIPTION" PrereqCivic="CIVIC_GAMES_RECREATION" Cost="400" AdvisorType="ADVISOR_GENERIC" AdjacentDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" Entertainment="3" RegionalRange="9" ObsoleteEra="ERA_RENAISSANCE" Quote="LOC_BUILDING_COLOSSEUM_QUOTE" QuoteAudio="Play_COLOSSEUM_QUOTE"/>
 		<Delete BuildingType="BUILDING_ESTADIO_DO_MARACANA" />
 		<Row BuildingType="BUILDING_ESTADIO_DO_MARACANA" Name="LOC_BUILDING_ESTADIO_DO_MARACANA_NAME" Description="LOC_BUILDING_ESTADIO_DO_MARACANA_DESCRIPTION" PrereqCivic="CIVIC_PROFESSIONAL_SPORTS" Cost="1740" AdvisorType="ADVISOR_GENERIC" AdjacentDistrict="DISTRICT_ENTERTAINMENT_COMPLEX" MaxWorldInstances="1" IsWonder="true" RequiresPlacement="true" Entertainment="4" RegionalRange="100000" Quote="LOC_BUILDING_ESTADIO_DO_MARACANA_QUOTE" QuoteAudio="Play_ESTADIODOMARACANA_QUOTE"/>
+		<!--灯塔-->
+		<Update>
+			<Where BuildingType="BUILDING_LIGHTHOUSE"/>
+			<Set>
+				<Cost>60</Cost>
+				<PrereqTech>TECH_SAILING</PrereqTech>
+				<PrereqDistrict>DISTRICT_CITY_CENTER</PrereqDistrict>
+			</Set>
+		</Update>
 	</Buildings>
 	<Building_YieldChanges>
 		<Delete BuildingType="BUILDING_WORKSHOP" />
